@@ -1,0 +1,128 @@
+
+table {
+    width: 500px;
+    height: 100%;
+    border-collapse: collapse; 
+    border-left: 2px solid rgba(0, 0, 0, 0.333);
+}
+
+th{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.year {
+    color: #000;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(218, 165, 32, 0.025);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+td {
+    border-top: 1px solid black;
+}
+.serial-num {
+    border: 1px solid black;
+}
+.days{
+    color: brown;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+#lbw {
+border-right: 1px solid red;
+}
+
+#fbm {
+border-left: 1px solid red;
+
+}
+
+.winning {
+color: blue;
+text-align: center;
+font-size: 25px;
+}
+.machine {
+color: red;
+text-align: center;
+font-size: 25px;
+}
+
+
+
+                      /* Breakpoints */
+     /*(400-430px device)*/  
+     @media screen and (max-width: 430px) {
+        body {
+            width: 100%;
+        }
+        
+        table {
+            width: 400px;
+            margin: 5px;
+        }
+        .year {
+            font-weight: bold;
+            font-size: 17px;
+        }
+        .serial-num {
+            width: 30px;
+        }
+        .winning,
+        .machine {
+            font-size: 18px;
+        } 
+     }
+
+
+     /*(360-393px device)*/  
+     @media screen and (max-width: 393px) {
+        body {
+            width: 100%;
+        }
+        
+        table {
+            width: 350px;
+            margin: 5px;
+        }
+        .year {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .serial-num {
+            width: 30px;
+        }
+        .winning,
+        .machine {
+            font-size: 17px;
+        } 
+     }
+     
+
+    /*(320px device)*/ 
+    @media screen and (max-width: 320px) {
+        body {
+            width: 100%;
+        }
+
+        table {
+            width: 300px;
+        }
+        .year {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .serial-num {
+            display: none;
+        }
+        .winning,
+        .machine {
+            font-size: 20px;
+        }  
+    }
+  
