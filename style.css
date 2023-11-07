@@ -156,18 +156,18 @@ iframe {
     border: 1px solid #ff0000; 
     border-radius: 5px;
 }
+.disclaim-message {
+    line-height: 1.5em; 
+}
+.respective-owner {
+    text-transform: uppercase;
+}
  
 /* footer */
 footer {
     padding: 15px;
     background-color: aliceblue;
     border-radius: 10px;
-}
-.disclaim-message {
-    line-height: 1.5em; 
-}
-.respective-owner {
-    text-transform: uppercase;
 }
 address {
     display: flex;
@@ -190,5 +190,10 @@ address {
             display: none;
         }
         
-    
+        .disclaimer {
+            width: inherit;
+            margin: 0;
+            padding: 0 20px;
+        }
+        
    }

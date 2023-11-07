@@ -73,6 +73,9 @@ font-size: 25px;
         .serial-num {
             width: 30px;
         }
+        .days {
+            width: 10px;
+        }
         .winning,
         .machine {
             font-size: 18px;
