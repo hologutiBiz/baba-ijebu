@@ -5,10 +5,10 @@ body {
     flex-direction: column;
 }
  
-header {
+/* header {
     position: sticky;
     top: 0;
-}
+} */
 /* nav */
 ul {
     list-style-type: none;
@@ -130,11 +130,10 @@ iframe {
     z-index: 9;
 } */
 
-.classification-wrapper {
+/* .classification-wrapper {
     margin: 10px;
 }
 .classification {
-    /* position: absolute; */
     width: 700px;
     height: 900px;
     padding: 10px;
@@ -142,7 +141,40 @@ iframe {
     border: 1px solid lightblue;
     border-radius: 5px;
     cursor: grab;
-    /* z-index: 2; */
+} */
+ 
+div.wrapper {
+    display: flex;
+    gap: 2.5em;
+    width: fit-content;
+    border: 1px solid #000;
+    background-color: #00000006;
+ 
+}
+.className-wrapper {
+    position: sticky;
+    top: 0;
+    color: white;
+    background-color: red;
+}
+.className {
+    /* writing-mode: vertical-rl; */
+    writing-mode: vertical-lr;
+    padding: 5px;
+}
+.no {
+    color: white;
+    background-color: purple;
+
+}
+tbody {
+    background-color: yellow;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    font-weight:400;
 }
 
 
