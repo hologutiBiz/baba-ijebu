@@ -1,25 +1,34 @@
-
+* {
+    padding: 0;
+    margin: 0;
+}
 
 body {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     height: auto;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: whitesmoke;
+}
 ul {
     list-style-type: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap; 
-    margin: 0;
-    padding: 15px;
-    overflow:hidden; 
-    background-color: whitesmoke;
+    gap: 1.5em;
+    padding: 15px; 
 }
-
 li {
-    margin: 10px;
-    float: left; 
+    display: block;
     border-right: 1px solid black;
+    margin: 0.5em auto; 
     font-size: small;
 }
 li a {
@@ -53,39 +62,69 @@ li a:visited {
 /* main */
 main {
     display: block;
-    /* margin: auto; */
 }
 
-      /* (page orientation) */
-      .page-ort-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-bottom: 1px solid whitesmoke;
-        padding: 10px;
-      
-        
-    }
-    .pageOrt-btn {
-        color: #fff;
-        width: 300px;
-        padding: 15px;
-        background-color: #0000ff;  
-        border: none;
-        border-radius: 5px; 
-        /* margin: 0; */
-        font-size: 20px;
-    }
-    .pageOrt-btn:hover {
-        background-color: #0505c7; 
-        box-shadow: 0 0 5px 2px #808080ab;
-        transition: 0.3s;
-    }
-    .pageOrt-btn:active {
-        transform: scale(0.97);  
-        transition: 0.3s;
-        box-shadow: none; 
-    }
+        /* (btn) */        
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    gap: 2rem
+}
+.page-ort-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    padding: 10px;
+}
+.pageOrt-btn {
+    color: #fff;
+    width: 300px;
+    padding: 15px;
+    background-color: #0000ff;  
+    border: none;
+    border-radius: 5px; 
+    font-size: 20px;
+    cursor: pointer;   
+}
+.pageOrt-btn:hover {
+    background-color: #0505c7; 
+    box-shadow: 0 0 5px 2px #808080ab;
+    transition: 0.3s;
+}
+.pageOrt-btn:active {
+    transform: scale(0.97);  
+    transition: 0.3s;
+    box-shadow: none; 
+}
+
+.buy-lrCard {
+    position: relative;
+    color: #fff;
+    width: 300px;
+    height: 55px;
+    top: 25px;
+    padding: 15px;
+    background-color: #0077cc;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.buy-lrCard:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: #005599;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+.buy-lrCard:hover:before {
+    transform: translateY(0);
+}
 
 
     /*(iframe)*/
@@ -166,6 +205,7 @@ address {
     align-items: center;
 
 }
+
 
                         /* Breakpoints */
     /*(360px to 375px devices)*/   
