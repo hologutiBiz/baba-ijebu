@@ -11,6 +11,13 @@
             margin: 2rem;
             text-align: center;
         }
+
+        main {
+            display: flex;
+            place-content: center;
+            gap: 20px;
+            
+        }
         section {
             color: #fff;
             width: 300px;
@@ -47,6 +54,16 @@
         .machine {
             background-color: #ff0000;
         }
+
+            @media screen and (max-width: 600px) {
+                main {
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center; 
+                    align-items: center;
+                    
+                }
+            }
     </style>
 </head>
 <body>
@@ -87,6 +104,39 @@
                 <h3 class="game">Bingo</h3>
                 <p>W: <span class="winning">87</span> - <span class="winning">15</span> - <span class="winning">58</span> - <span class="winning">36</span> - <span class="winning">17</span></p>
                 <p>M: <span class="machine">86</span> - <span class="machine">41</span> - <span class="machine">53</span> - <span class="machine">54</span> - <span class="machine">30</span></p>
+            </article>
+        </section>
+        <section>
+            <h2 class="date">Friday 17/11/2023</h2>
+            <article>
+                <h3 class="game">Royal</h3>
+                <p>W: <span class="winning">35</span> - <span class="winning">49</span> - <span class="winning">1</span> - <span class="winning">27</span> - <span class="winning">83</span></p>
+                <p>M: <span class="machine">6</span> - <span class="machine">89</span> - <span class="machine">23</span> - <span class="machine">16</span> - <span class="machine">76</span></p>
+            </article>
+            <article>
+                <h3 class="game">Metro</h3>
+                <p>W: <span class="winning">35</span> - <span class="winning">11</span> - <span class="winning">36</span> - <span class="winning">1</span> - <span class="winning">9</span></p>
+                <p>M: <span class="machine">74</span> - <span class="machine">15</span> - <span class="machine">26</span> - <span class="machine">88</span> - <span class="machine">34</span></p>
+            </article>
+            <article>
+                <h3 class="game">Gold</h3>
+                <p>W: <span class="winning">63</span> - <span class="winning">47</span> - <span class="winning">65</span> - <span class="winning">10</span> - <span class="winning">26</span></p>
+                <p>M: <span class="machine">2</span> - <span class="machine">87</span> - <span class="machine">73</span> - <span class="machine">23</span> - <span class="machine">4</span></p>
+            </article>
+            <article>
+                <h3 class="game">Jackpot</h3>
+                <p>W: <span class="winning">45</span> - <span class="winning">10</span> - <span class="winning">79</span> - <span class="winning">3</span> - <span class="winning">44</span></p>
+                <p>M: <span class="machine">33</span> - <span class="machine">20</span> - <span class="machine">37</span> - <span class="machine">75</span> - <span class="machine">56</span></p>
+            </article>
+            <article>
+                <h3 class="game">Bonanza</h3>
+                <p>W: <span class="winning">79</span> - <span class="winning">84</span> - <span class="winning">52</span> - <span class="winning">44</span> - <span class="winning">16</span></p>
+                <p>M: <span class="machine">6</span> - <span class="machine">54</span> - <span class="machine">55</span> - <span class="machine">73</span> - <span class="machine">31</span></p>
+            </article>
+            <article>
+                <h3 class="game">Vag</h3>
+                <p>W: <span class="winning">37</span> - <span class="winning">83</span> - <span class="winning">47</span> - <span class="winning">54</span> - <span class="winning">87</span></p>
+                <p>M: <span class="machine">44</span> - <span class="machine">73</span> - <span class="machine">18</span> - <span class="machine">13</span> - <span class="machine">84</span></p>
             </article>
         </section>
     </main>
