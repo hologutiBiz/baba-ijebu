@@ -53,8 +53,10 @@ li a {
     text-decoration: none;
 }
 li a:hover {
-    color: red;
-    background-color: white;   
+    color: #fff;
+    background-color: #ff0000;   
+    border-radius: 5px;
+    transition: 0.5s;
 }
 li a:visited {
     color: purple;
