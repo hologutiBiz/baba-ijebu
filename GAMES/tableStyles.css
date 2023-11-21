@@ -92,7 +92,7 @@ font-size: 25px;
         
         table {
             width: 400px;
-            margin: 5px;
+            margin-block-start: 30px;
         }
         .year {
             font-weight: bold;
@@ -119,7 +119,7 @@ font-size: 25px;
         
         table {
             width: 350px;
-            margin: 5px;
+            margin-block-start: 25px;
         }
         .year {
             font-weight: bold;
@@ -143,6 +143,8 @@ font-size: 25px;
 
         table {
             width: 300px;
+            margin-block-start: 20px;
+
         }
         .year {
             font-weight: bold;
@@ -153,7 +155,7 @@ font-size: 25px;
         }
         .winning,
         .machine {
-            font-size: 20px;
+            font-size: 18px;
         }  
     }
   
