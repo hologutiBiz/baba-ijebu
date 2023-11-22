@@ -1,13 +1,13 @@
 
     // dialog //
-// let dialog = document.querySelector('dialog');
-// document.querySelector('#show').onclick = function() {
-//     dialog.show();
-// };
-// document.querySelector('#close').onclick = function() {
-//     dialog.close();
-//     document.getElementById('dis').style.display = 'none';
-// };
+let dialog = document.querySelector('dialog');
+document.querySelector('#show').onclick = function() {
+    dialog.show();
+};
+document.querySelector('#close').onclick = function() {
+    dialog.close();
+    document.getElementById('dis').style.display = 'none';
+};
 
 
 
