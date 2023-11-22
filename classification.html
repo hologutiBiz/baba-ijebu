@@ -42,14 +42,21 @@
             text-align: center;
             font-weight:400;
         }
+
+        dialog {
+            border: none;
+        }
+
+        button {
+            width: 200px;
+            margin-top: 15px; 
+        }
         
 
     </style>
 </head>
 <body>
-    <button id="show">button</button>
-<!-- <dialog> -->
-    <button id="close">button</button>
+    <dialog> 
     <div>
         <div class="wrapper">
             <table>
@@ -1349,7 +1356,9 @@
             </table>
         </div>
     </div>
-<!-- </dialog> -->
+    <button id="close">Close</button>
+    </dialog>
+    <button id="show">Show classification</button>
     <script src="script.js"></script>
 </body>
 </html>
