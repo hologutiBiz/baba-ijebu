@@ -179,7 +179,15 @@ iframe {
 } */
 
 .classification-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
+    /* background-color: #0000ff; */
+} 
+.counterpart {
+    font-size: 24px;
 }
 .classification {
     width: 700px;

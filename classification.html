@@ -8,11 +8,24 @@
     <link rel="icon" type="image/png" href="/Assets/hbc-logo-edit.jpg">
 
     <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 2.5rem;
+        }
         
         div.wrapper {
             display: flex;
             gap: 2.5em;
             width: fit-content;
+            margin: 50px 0;
             border: 1px solid #000;
             background-color: #00000006;
          
@@ -43,7 +56,10 @@
             font-weight:400;
         }
 
-        dialog {
+       
+
+
+        /* dialog {
             border: none;
         }
 
@@ -60,14 +76,22 @@
             background: #0303d6;
             transform:scale(1.090);
             transition: 0.4s;
-        }
+        } */
         
 
     </style>
 </head>
 <body>
-    <dialog> 
-    <div>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <!-- <dialog>  -->
+    
+    <div class="container">
         <div class="wrapper">
             <table>
                 <thead>
@@ -1365,10 +1389,15 @@
                 </tbody>
             </table>
         </div>
+        <!-- <div class="games-frame">
+            <iframe src="/">
+
+            </iframe>
+        </div> -->
     </div>
-    <button id="close">Close</button>
+    <!-- <button id="close">Close</button>
     </dialog>
     <button id="show">Show classification</button>
-    <script src="script.js"></script>
+    <script src="script.js"></script> -->
 </body>
 </html>
