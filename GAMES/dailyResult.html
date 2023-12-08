@@ -15,10 +15,11 @@
             font-size: 24px;
         }
 
-        div {
+        div.gameResults {
             display: flex;
             place-content: center;
             gap: 2rem;
+            background-image: url("../Assets/Lotto_image_cinematic_shot_dyn.webp");
             
         }
         section {
@@ -39,8 +40,7 @@
             border-radius: 10px;
         } 
         .game {
-            color: lightblue;
-            color: #000;
+            color: #fff;
             text-decoration: underline;
             text-transform: uppercase;
         }
@@ -60,6 +60,55 @@
             color: #ff0000;
         }
 
+
+        /* table */
+        .gameList {
+            width: 100%;
+            margin: 5rem 0;
+         
+        }
+        table {
+            width: 600px;
+            margin: 5rem;
+            /* padding-bottom: 30px; */
+            text-align: center;
+            border: 1px solid #000;
+        }
+        thead {
+            text-transform: uppercase;
+            background-color: #f5f5f5;
+            /* border: 1px solid #000; */
+            font-size: 24px;
+        }
+        th {
+            padding: 20px;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        /* tbody {
+            background-color: #0000ff;
+        } */
+        td {
+            padding: 20px;
+            border: 1px solid #000;
+            font-size: 22px;
+        }
+        .color-1 {
+            background-color: azure;
+            border-bottom: 2px solid #ff0000;
+        }
+        .color-2 {
+            background-color: rgb(242, 248, 248);
+
+        }
+
+
+        .day {
+            text-transform: uppercase;
+            color: #ff0000;
+        }
+
+
             @media screen and (max-width: 600px) {
                 main {
                     width: 100%;
@@ -77,41 +126,7 @@
             <a href="/">Home</a>
         </nav>
     </header>
-    <div>
-        <section>
-            <h2 class="date">wednesday 6/11/2023</h2>
-            <article>
-                <h3 class="game">Tota</h3>
-                <p class="winning">76 - 67 - 35 - 70 - 59</p>
-                <p class="machine">55 -  9 - 11 - 29 - 89</p>        
-            </article>
-            <article>
-                <h3 class="game">mark II</h3>
-                <p class="winning">20 - 16 -  5 - 42 - 89</p>
-                <p class="machine">61 - 84 - 29 - 76 - 72</p>        
-            </article>
-            <article>
-                <h3 class="game">vag</h3>
-                <p class="winning">86 - 64 - 26 - 29 - 20</p>
-                <p class="machine">48 - 34 -  3 - 14 - 75</p>        
-            </article>
-            <article>
-                <h3 class="game">Enugu</h3>
-                <p class="winning">83 - 87 - 80 - 33 - 67</p>
-                <p class="machine">13 - 15 - 50 - 66 - 47</p>        
-            </article>
-            <article>
-                <h3 class="game">Midweek</h3>
-                <p class="winning">71 - 88 - 63 - 10 - 33</p>
-                <p class="machine">15 -  7 - 68 -  3 - 79</p>        
-            </article>
-            <article>
-                <h3 class="game">Lucky</h3>
-                <p class="winning">77 - 19 - 43 - 74 - 73</p>
-                <p class="machine">54 - 83 - 55 - 65 -  9</p>        
-            </article>
-        </section>
-
+    <div class="gameResults">
         <section>
             <h2 class="date">Thursday</h2>
             <article>
@@ -145,6 +160,40 @@
                 <p class="machine">26 - 17 - 36 - 34 - 80</p>        
             </article>
         </section>
+
+        <section>
+            <h2 class="date">Friday 8/12/2023</h2>
+            <article>
+                <h3 class="game">Royal</h3>
+                <p class="winning">12 - 36 - 35 - 79 - 49</p>
+                <p class="machine">53 - 72 -  9 - 85 - 33</p>        
+            </article>
+            <article>
+                <h3 class="game">Metro</h3>
+                <p class="winning">52 - 58 - 31 - 35 -  7</p>
+                <p class="machine">79 - 22 - 67 - 15 - 82</p>        
+            </article>
+            <article>
+                <h3 class="game">Gold</h3>
+                <p class="winning"> 8 - 16 - 51 - 87 - 14</p>
+                <p class="machine">22 - 47 - 11 - 29 - 72</p>        
+            </article>
+            <article>
+                <h3 class="game">Jackpot</h3>
+                <p class="winning">82 - 30 - 52 - 26 - 11</p>
+                <p class="machine">17 - 14 -  4 - 13 -  5</p>        
+            </article>
+            <article>
+                <h3 class="game">Bonanza</h3>
+                <p class="winning">49 - 58 - 69 - 88 -  1</p>
+                <p class="machine">84 - 35 - 48 - 55 - 82</p>        
+            </article>
+            <article>
+                <h3 class="game">Vag</h3>
+                <p class="winning"> 9 - 20 - 33 - 70 - 19</p>
+                <p class="machine">44 - 18 - 8 - 42 - 31</p>        
+            </article>
+        </section>
     </div>
     
     <div class="gameList">
@@ -156,14 +205,194 @@
                     <th>Close Time</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>Monday</tr>
-                <tr>Tuesday</tr>
-                <tr>Wednesday</tr>
-                <tr>Thursday</tr>
-                <tr>Friday</tr>
-                <tr>Saturday</tr>
-                <tr>Sunday</tr>
+            <tbody  class="color-1">
+                <tr>
+                    <td rowspan="6" class="day">monday</td>
+                    <td>Diamond</td>
+                    <td>9:25 am</td>
+                </tr>
+                <tr>
+                    <td>People</td>
+                    <td>12:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Bingo</td>
+                    <td>3:25 pm</td>
+                </tr>
+                <tr>
+                    <td>MSP</td>
+                    <td>7:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Metro</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>International</td>
+                    <td>10:25 pm</td>
+                </tr>
+            </tbody>
+            <tbody  class="color-2">
+                <tr>
+                    <td rowspan="6" class="day">tuesday</td>
+                    <td>Gold</td>
+                    <td>9:25 am</td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>12:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Jackpot</td>
+                    <td>3:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Lucky G</td>
+                    <td>7:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Club Master</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Super</td>
+                    <td>10:25 pm</td>
+                </tr>
+            </tbody>
+            <tbody  class="color-1">
+                <tr>
+                    <td rowspan="6" class="day">wednesday</td>
+                    <td>Tota</td>
+                    <td>9:25 am</td>
+                </tr>
+                <tr>
+                    <td>Mark II</td>
+                    <td>12:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Vag</td>
+                    <td>3:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Midweek</td>
+                    <td>7:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Enugu</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Lucky</td>
+                    <td>10:25 pm</td>
+                </tr>
+            </tbody>
+            <tbody  class="color-2">
+                <tr>
+                    <td rowspan="6" class="day">thursday</td>
+                    <td>People</td>
+                    <td>9:25 am</td>
+                </tr>
+                <tr>
+                    <td>Fair Chance</td>
+                    <td>12:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Diamond</td>
+                    <td>3:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Fortune</td>
+                    <td>7:25 pm</td>
+                </tr>
+                <tr>
+                    <td>International</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Bingo</td>
+                    <td>10:25 pm</td>
+                </tr>
+            </tbody>
+            <tbody  class="color-1">
+                <tr>
+                    <td rowspan="6" class="day">frisday</td>
+                    <td>Royal</td>
+                    <td>9:25 am</td>
+                </tr>
+                <tr>
+                    <td>Metro</td>
+                    <td>12:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Gold</td>
+                    <td>3:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Bonanza</td>
+                    <td>7:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Jackpot</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Vag</td>
+                    <td>10:25 pm</td>
+                </tr>
+            </tbody>
+            <tbody  class="color-2">
+                <tr>
+                    <td rowspan="6" class="day">saturday</td>
+                    <td>Premier King</td>
+                    <td>9:25 am</td>
+                </tr>
+                <tr>
+                    <td>Super</td>
+                    <td>12:25 pm</td>
+                </tr>
+                <tr>
+                    <td>Club Master</td>
+                    <td>3:25 pm</td>
+                </tr>
+                <tr>
+                    <td>National</td>
+                    <td>7:25 pm</td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Fair Chance</td>
+                    <td>10:25 pm</td>
+                </tr>
+            </tbody>
+            <tbody  class="color-1">
+                <tr>
+                    <td rowspan="6" class="day">sunday</td>
+                    <td>Royal</td>
+                    <td>9:25 am</td>
+                </tr>
+                <tr class="color-2">
+                    <td>Mark II</td>
+                    <td>12:25 pm</td>
+                </tr>
+                <tr class="color-1">
+                    <td>Enugu</td>
+                    <td>3:25 pm</td>
+                </tr>
+                <tr class="color-2">
+                    <td>Aseda</td>
+                    <td>7:25 pm</td>
+                </tr>
+                <tr class="color-1">
+                    <td>Lucky</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr class="color-2">
+                    <td>Tota</td>
+                    <td>10:25 pm</td>
+                </tr>
             </tbody>
         </table>
     </div>

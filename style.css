@@ -74,7 +74,10 @@ li a:hover {
     transition: 0.5s;
 }
 li a:visited {
-    color: #ff03035d;
+    color: #b3d1de;
+}
+li a:visited:hover {
+    color: #000;
 }
 .home {
     color: black;
