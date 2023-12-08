@@ -39,6 +39,11 @@ table {
     border-left: 2px solid rgba(0, 0, 0, 0.333);
 }
 
+caption {
+    /* color: #ff0000; */
+    font-size: 30px;
+}
+
 th{
     background-color: whitesmoke;
     border: 1px solid black;
@@ -114,7 +119,7 @@ font-size: 25px;
         }
         .winning,
         .machine {
-            font-size: 18px;
+            font-size: 16.5px;
         } 
      }
 
@@ -138,7 +143,7 @@ font-size: 25px;
         }
         .winning,
         .machine {
-            font-size: 17px;
+            font-size: 15px;
         } 
      }
      
