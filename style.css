@@ -202,7 +202,7 @@ iframe {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    /* background-color: #0000ff; */
+    background-image: url("./Assets/Lotto_image_cinematic_shot_dyn.webp"); 
 } 
 .counterpart {
     font-size: 24px;
@@ -220,11 +220,12 @@ iframe {
 
     /*(discaimer)*/
 .disclaimer {
-    color: #fff;
+    /* color: #fff; */
     text-align: justify;
     padding: 15px;
     margin: 5rem 2rem 3rem 2rem;
-    background-color: #000;
+    /* background-color: #000; */
+    box-shadow: 2px 2px 10px 2px #000;
     border: 1px solid #ff0000; 
     border-radius: 5px;
 }
@@ -237,17 +238,58 @@ iframe {
  
 /* footer */
 footer {
-    padding: 15px;
-    background-color: aliceblue;
-    border-radius: 10px;
+    color: #87ceeb;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+    gap: 30px; 
+    background-color: #000;
 }
-address {
+.contentInfo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10em;
+}
+.team {
+    height: 100px;
+    padding: 10px;
+
+}
+.contentInfo-wrapper span {
+    color: #daa520;
+    opacity: 0.6;
+}
+.contentInfo-wrapper a {
+    color: #87ceeb;
+    text-decoration: none;
+}
+.getInTouch {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 110px;
+    padding-left: 5em;
+    gap: 5px;
+    border-left: 1px solid rgba(135, 207, 235, 0.349);
+
+    /* margin: auto 20px; */
+}
+.stayConnected {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-left: 1px solid rgba(135, 207, 235, 0.349);
+
+}
+/* address {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-}
+} */
 
 
                         /* Breakpoints */
