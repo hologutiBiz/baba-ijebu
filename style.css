@@ -299,6 +299,18 @@ footer {
             width: 100%;
         }
 
+        div.navigation {
+            display: block; 
+            width: 100%;
+            padding: 20px 0;
+        }
+        div.navigation a {
+            display: block;
+            width: 15rem !important;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
         .page-ort-wrapper,
         .iframe-container,
         .classification-wrapper {
@@ -310,5 +322,46 @@ footer {
             margin: 0;
             padding: 0 20px;
         }
+
+        footer {
+           display: block; 
+           width: 100%;
+           margin-top: 3rem;
+           padding: 10px 0;
+           text-align: center;
+        }
+        small {
+            width: 100%;
+            margin: 50px 5px;
+            font-size: 2rem;
+        }
+        .contentInfo-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+       .team {
+            width: 100%;
+            text-decoration: underline !important;
+            text-decoration: #0077ccb7;
+            padding: 10px 0;
+            margin: 2em;
+            background-color: #2282c72d; 
+            font-size: 3em;
+       }
+       .stayConnected {
+            position: relative;
+            flex-direction: unset;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            gap: 1em;
+            font-size: 2em;  
+       }
+       span {
+            position: absolute;
+            top: -2em;
+       }
         
    }
