@@ -43,7 +43,7 @@ li {
     width: 100%;
     gap: 20px;
     background-color: #000;
-    padding: 20px;
+    padding: 20 0px;
 }
 #dailyResult {
     /* color: #000; */

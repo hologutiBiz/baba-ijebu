@@ -112,15 +112,46 @@
        
 
                             /* media */
-            @media screen and (min-width: 300px) and (max-width: 900px){
+            @media screen and (min-width: 400px) and (max-width: 900px){
                 body {
                     width: 100vw;
+                    margin: 0;
+                }
+
+                main {
+                    width: 21rem;
+                }
+                section {
+                    margin: 0.5em;
+                }
+
+                .facebook {
+                    width: 30ch;
+                    text-align: justify;
+                }
+
+                img {
+                    width: 300px;
+                }
+
+                footer {
+                    width: 100vw;
+                    margin: 0;
+                    padding: 20px 0;
+                }
+                
+            }
+            @media screen and (max-width: 320px){
+                body {
+                    width: 100vw; 
                     font-size: 1.2rem;
                     margin: 0;
                 }
 
                 main {
-                    width: 100%; 
+                    /* width: 100%;  */
+                    /* margin: 0 50px; */
+
                 }
 
                 section {
@@ -139,11 +170,20 @@
                 p {
                     width: 24ch;
                     text-align: justify;
+                    margin: auto 10px;
                 }
 
                 img {
                     width: 300px;
                 }
+
+                footer {
+                    width: 100%;
+                    text-align: justify;
+                }
+                footer p {
+                    width: 35ch;
+                    font-size: small;                }
             }
     </style>
 
@@ -196,7 +236,7 @@
             </article>
         </section>
 
-        <p style="color:#ff0000">While you have selected your best choice, don't forget to share with others on the comment section of the<a href="https://www.facebook.com/hologutiBusines/posts/pfbid02tb5pVDBSz9AXmfDKXUWvJD7mPxfFzpZamXZVpK7kv2658WJdNnRpDQSCkoQBAbKFl"> facebook post</a></p>
+        <p class="facebook" style="color:#ff0000">While you have selected your best choice, don't forget to share with others on the comment section of the<a href="https://www.facebook.com/hologutiBusines/posts/pfbid02tb5pVDBSz9AXmfDKXUWvJD7mPxfFzpZamXZVpK7kv2658WJdNnRpDQSCkoQBAbKFl"> facebook post</a></p>
 
 
         
@@ -244,7 +284,7 @@
         </aside> -->
     </main>
     <footer>
-        <small>You can click on the image to take you directly to the board</small>
+        <p>You can click on the image to take you directly to the board</p>
     </footer>
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3639147338737274" crossorigin="anonymous"></script>
