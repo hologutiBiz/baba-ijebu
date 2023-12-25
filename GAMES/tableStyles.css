@@ -69,9 +69,18 @@ td {
     border: 1px solid black;
 }
 .days{
+    position: relative;
     color: brown;
     border: 1px solid black;
     background-color: whitesmoke;
+}
+
+.xMas-tree {
+    position: absolute;
+    top: 8px;
+    right: 5%;
+    font-size: 20px;
+    text-align: center;
 }
 
 #lbw {
