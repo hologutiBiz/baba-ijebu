@@ -290,6 +290,10 @@ footer {
     align-items: start;
     gap: 10em;
 }
+footer img {
+    margin: 20px auto;
+    border-radius: 200px;
+}
 .team {
     height: 100px;
     padding: 10px;
@@ -311,8 +315,6 @@ footer {
     padding-left: 5em;
     gap: 5px;
     border-left: 1px solid rgba(135, 207, 235, 0.349);
-
-    /* margin: auto 20px; */
 }
 .stayConnected {
     display: flex;
@@ -371,7 +373,7 @@ footer {
         small {
             width: 100%;
             margin: 50px 5px;
-            font-size: 2rem;
+            font-size: 1.5rem; 
         }
         .contentInfo-wrapper {
             display: flex;
@@ -384,9 +386,13 @@ footer {
             text-decoration: underline !important;
             text-decoration: #0077ccb7;
             padding: 10px 0;
-            margin: 2em;
+            margin-top: 2em;
             background-color: #2282c72d; 
-            font-size: 3em;
+            font-size: 2em;
+       }
+       .getInTouch {
+            height: fit-content;
+            padding: 0;
        }
        .stayConnected {
             position: relative;
@@ -395,7 +401,7 @@ footer {
             padding: 0;
             margin: 0;
             gap: 1em;
-            font-size: 2em;  
+            font-size: 1.5em;  
        }
        span {
             position: absolute;
@@ -403,3 +409,12 @@ footer {
        }
         
    }
+
+
+        /* animation & motion */
+        @media (prefers-reduced-motion: reduce) {
+            .merry-christmas {
+                animation: none;
+        
+            }
+        }
