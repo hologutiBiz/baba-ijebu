@@ -69,7 +69,7 @@ li {
             opacity: 1;
         }
     }
-    .navigation .merry-christmas {
+.navigation .merry-christmas {
         position: absolute;
         color: #f5f5f5;
         top: 65%;
@@ -77,14 +77,14 @@ li {
         border-radius: 5px;
         background-color: #000;
         font-size: 4em;
-    }
-    .merry-christmas::after {
-        content: "\01f384";
-        animation: change ease-in-out 10s infinite alternate;
+}
+.merry-christmas::after {
+    content: "\01f384";
+    animation: change ease-in-out 10s infinite alternate;
 
-    }
-#dailyResult {
-    /* color: #000; */
+}
+.navigation .anchor {
+    color: #fff;
     width: 300px;
     text-align: center;
     padding: 15px;
@@ -95,10 +95,18 @@ li {
 }
 #dailyResult:visited {
     color: #f5f5f5;
+    font-weight: bolder;
 }
-#dailyResult:hover {
+#dailyResult:hover,
+#planAndEvent:hover {
+    text-decoration-color: #ff0000;
     background-color: #2282c7bd;
+    font-weight: 800;
     transition: 1s;
+}
+#planAndEvent {
+    color: #ffff00;
+    font-weight: bolder;
 }
 li a {
     color: #fff;
