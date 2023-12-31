@@ -63,6 +63,13 @@ td {
     border-top: 1px solid black;
     padding: 5px 0;
 }
+.line {
+    color: #ff0000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+}
 .serial-num {
     width: 25px;
     text-align: center;
@@ -101,6 +108,23 @@ font-size: 25px;
 color: red;
 text-align: center;
 font-size: 25px;
+}
+
+.symbol {
+    text-align: center;
+}
+.newYearSymbol {
+    margin: auto 20px;
+    font-size: x-large;
+}
+.happyNewYear {
+    color: #fff;
+    text-align: center;
+    word-spacing: 10px;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: #000;
 }
 
 

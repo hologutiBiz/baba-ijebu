@@ -7,6 +7,35 @@
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3639147338737274" crossorigin="anonymous"></script>
     <style>
+        body {
+      margin: 0;
+      /* overflow: hidden; */
+      background-color: #000;
+    }
+
+    .firework {
+      position: absolute;
+      /* width: 6px;
+      height: 6px; */
+      /* background-color: #fff; */
+      /* border-radius: 50%; */
+      opacity: 0;
+      animation: explode 1s ease-out; 
+    }
+    .firework::after {
+        content: "\1F387";
+    }
+
+    @keyframes explode {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(20);
+        opacity: 0;
+      }
+    } 
         header {
             margin: 2rem;
             text-align: center;
@@ -28,6 +57,7 @@
             text-align: center;
             box-shadow: 1px 2px 5px 0px #000;
             border-radius: 5px;
+            /* background-color: #fff; */
         }
         article {
             width: 100%;
@@ -41,6 +71,7 @@
         } 
         .game {
             color: #000; 
+            color: #fff;
             text-decoration: underline;
             text-transform: uppercase;
         }
@@ -177,42 +208,7 @@
         </nav>
     </header>
     <div class="gameResults">
-        <span>&#127876</span>
         <section aria-label="two days ago result">
-            <h2 class="date">friday 29/12/2023</h2>
-            <article>
-                <h3 class="game">Royal</h3>
-                <p class="winning">36 - 46 - 21 - 49 - 58</p>
-                <p class="machine">32 - 44 - 8 - 45 - 78</p>        
-            </article>
-            <article>
-                <h3 class="game">Metro</h3>
-                <p class="winning">22 - 27 - 26 - 78 - 19</p>
-                <p class="machine">45 - 30 - 58 - 74 - 20</p>        
-            </article>
-            <article>
-                <h3 class="game">Gold</h3>
-                <p class="winning">39 - 8 - 23 - 24 - 1</p>
-                <p class="machine">29 - 33 - 34 - 78 - 67</p>        
-            </article>
-            <article>
-                <h3 class="game">Jackpot</h3>
-                <p class="winning">42 - 50 - 36 - 76 - 53</p>
-                <p class="machine">70 - 35 - 19 - 30 - 40</p>        
-            </article>
-            <article>
-                <h3 class="game">Bonanza</h3>
-                <p class="winning">12 - 49 - 80 - 6 - 71</p>
-                <p class="machine">57 - 75 - 11 - 69 - 62</p>        
-            </article>
-            <article>
-                <h3 class="game">vag</h3>
-                <p class="winning">2 - 72 - 28 - 35 - 87</p>
-                <p class="machine">22 - 5 - 32 - 78 - 51</p>        
-            </article>
-        </section>
-
-        <section aria-label="yesterday result">
             <h2 class="date">saturday 30/12/2023</h2>
             <article>
                 <h3 class="game">Premier King</h3>
@@ -246,7 +242,41 @@
             </article>
         </section>
 
-        <span>&#127876</span>
+        <section aria-label="yesterday result">
+            <h2 class="date">sunday 31/12/2023</h2>
+            <article>
+                <h3 class="game">Royal</h3>
+                <p class="winning">47 - 4 - 58 - 6 - 32</p>
+                <p class="machine">83 - 89 - 26 - 48 - 71</p>        
+            </article>
+            <article>
+                <h3 class="game">mark ii</h3>
+                <p class="winning">33 - 48 - 56 - 6 - 87</p>
+                <p class="machine">71 - 66 - 24 - 4 - 25</p>        
+            </article>
+            <article>
+                <h3 class="game">Enugu</h3>
+                <p class="winning">33 - 31 - 16 - 49 - 86</p>
+                <p class="machine">75 - 9 - 20 - 57 - 41</p>        
+            </article>
+            <article>
+                <h3 class="game">Aseda</h3>
+                <p class="winning">17 - 89 - 70 - 33 - 61</p>
+                <p class="machine">44 - 4 - 81 - 63 - 55</p>        
+            </article>
+            <article>
+                <h3 class="game">Lucky</h3>
+                <p class="winning">78 - 60 - 33 - 3 - 28</p>
+                <p class="machine">37 - 54 - 51 - 42 - 5</p>        
+            </article>
+            <article>
+                <h3 class="game">Tota</h3>
+                <p class="winning">2 - 29 - 61 - 66 - 16</p>
+                <p class="machine">56 - 48 - 08 - 70 - 60</p>        
+            </article>
+        </section>
+
+      
 
     </div>
     
@@ -464,5 +494,24 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>   
+    <script>
+        function createFirework() {
+      const firework = document.createElement('div');
+      firework.className = 'firework';
+      firework.style.left = `${Math.random() * window.innerWidth}px`;
+      firework.style.top = `${Math.random() * window.innerHeight}px`;
+      document.body.appendChild(firework);
+
+      setTimeout(() => {
+        document.body.removeChild(firework);
+      }, 1000);
+    }
+
+    function startFireworks() {
+      setInterval(createFirework, 800);
+    }
+
+    window.onload = startFireworks;
+    </script>
 </body>
 </html>
