@@ -106,30 +106,6 @@ class Firework {
     }
 }
 
-let fireworks = [];
-
-    function animate() {
-        requestAnimationFrame(animate);
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        fireworks.forEach((firework, index) => {
-            firework.update();
-            firework.draw();
-
-            if (firework.lifespan <= 0 && firework.particles.every(p => p.alpha <= 0)) {
-                fireworks.splice(index, 1);
-            }
-        });
-
-        if (Math.random() < 0.015) { 
-        const x = Math.random() * canvas.width;
-        const color = `hsl(${Math.random() * 360}, 50%, 50%)`;
-        fireworks.push(new Firework(x, canvas.height, color));
-    }
- }
-
-animate();
 
 
    

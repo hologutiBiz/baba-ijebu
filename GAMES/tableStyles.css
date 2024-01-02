@@ -187,7 +187,7 @@ font-size: 25px;
      
 
     /*(320px device)*/ 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 359px) {
         body {
             width: 100%;
         }
@@ -201,6 +201,7 @@ font-size: 25px;
             font-weight: bold;
             font-size: 16px;
         }
+        .line,
         .serial-num {
             display: none;
         }
