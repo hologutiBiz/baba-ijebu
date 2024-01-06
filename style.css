@@ -219,7 +219,7 @@ iframe {
 }
 .classification {
     width: 700px;
-    /* height: 900px; */
+    height: 95em;
     padding: 10px;
     margin: 20px;
     border: 1px solid lightblue;
