@@ -44,7 +44,6 @@ li {
     width: 100%;
     gap: 20px;
     background-color: #000;
- 
     padding: 20px 0;
 }
 .navigation .anchor {
@@ -218,7 +217,7 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0;
     background-image: url("./Assets/Lotto_image_cinematic_shot_dyn.webp"); 
 } 
 .counterpart {
@@ -312,7 +311,47 @@ footer img {
 
 
                         /* Breakpoints */
-    /*(360px to 375px devices)*/   
+
+    /*(360px to 599px devices)*/    
+    @media screen and (max-width: 700px) {
+        body {
+            width: 100%;
+        }
+
+        .navigation,
+        .anchor,
+        .btn-container {
+            display: block;
+            height: auto;
+            /* margin: 0; */
+        }
+
+        #dailyResult,
+        #planAndEvent {
+            margin: 10px auto;
+        }
+       
+        .buy-lrCard {
+            left: 23%;
+            margin-bottom: 5rem;
+        }
+
+        .classification {
+            width: 100%;
+            margin: 0;
+        } 
+
+        .contentInfo-wrapper {
+           display: block; 
+        }
+        .stayConnected {
+            display: initial;
+        }
+        
+    }
+
+
+    /*(360px to 599px devices)*/   
    @media screen and (min-width: 320px ) and (max-width: 599px) {
         body {
             width: 100%;
