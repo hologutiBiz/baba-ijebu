@@ -190,6 +190,11 @@ main {
     width: 550px;
     height: 100%;  
 }
+.frame:focus {
+    outline: 3px solid #800080;
+    outline-style:  dashed;
+}
+
 
 iframe {
     width: 500px; 
