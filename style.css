@@ -3,6 +3,21 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#top {
+    color: #fff;
+    position: sticky;
+    top: 10%;
+    left: 89%;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid #ff0000;
+    border-radius: 50%;
+}
+
 body {
     width: 100%;
     height: auto;
@@ -113,6 +128,7 @@ li a:visited:hover {
 main {
     display: block;
 }
+
 
         /* (btn) */        
 .btn-container {
