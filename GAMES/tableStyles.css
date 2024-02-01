@@ -80,7 +80,7 @@ td {
     color: #000;
     border: 1px solid black;
     background-color: whitesmoke;
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
 
 .xMas-tree {
