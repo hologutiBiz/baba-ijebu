@@ -386,6 +386,13 @@ footer img {
             margin: 10px auto;
             border-radius: 10px;
         }
+
+
+        /* #buyLRcard{
+            display: none;
+            left: 20px;
+            background-color: red !important;
+        } */
        
 
         .page-ort-wrapper,
@@ -394,58 +401,103 @@ footer img {
             display: none;
         }
         
+      
+       
+        
+   }
+
+
+    /*(320px device)*/   
+    @media screen and (max-width: 321px ) {
+        body {
+            width: 100%;
+        }
+
+       
+        .buy-lrCard {
+           display: none;
+        } 
+
         .disclaimer {
-            width: inherit;
-            margin: 0;
-            padding: 0 20px;
+            width: 300px;
+            margin: 10px;
+            padding: 0;
+        }
+        .disclaim-message {
+            width: 23ch;
+            margin: 10px;
+            font-size: 24px;
+        }
+        .respective-owner {
+            width: 35ch;
+            margin: 10px;
+            line-height: 1.5;
         }
 
         footer {
-           display: block; 
-           width: 100%;
-           margin-top: 3rem;
-           padding: 10px 0;
-           text-align: center;
-        }
-        small {
+            display: block; 
             width: 100%;
-            margin: 50px 5px;
-            font-size: 1.5rem; 
-        }
-        .contentInfo-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-       .team {
-            width: 100%;
-            text-decoration: underline !important;
-            text-decoration: #0077ccb7;
+            margin-top: 3rem;
             padding: 10px 0;
-            margin-top: 2em;
-            background-color: #2282c72d; 
-            font-size: 2em;
-       }
-       .getInTouch {
-            height: fit-content;
-            padding: 0;
-       }
-       .stayConnected {
-            position: relative;
-            flex-direction: unset;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-            gap: 1em;
-            font-size: 1.5em;  
-       }
-       span {
-            position: absolute;
-            top: -2em;
-       }
-        
-   }
+            text-align: center;
+         }
+         footer p {
+             margin: 50px 5px; 
+             font-size: 1.5rem;  
+         }
+         .apex-domain {
+            width: 100px;
+         }
+         .contentInfo-wrapper {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+         }
+        .team {
+             width: 100%;
+             text-decoration: underline !important;
+             text-decoration: #0077ccb7;
+             padding: 10px 0;
+             margin-top: 2em;
+             background-color: #2282c72d; 
+             font-size: 2em;
+        }
+        .getInTouch {
+            width: 100%;
+             height: fit-content;
+             padding: 0;
+        }
+        .span.in-touch {
+            font-size: 35px;
+        }
+        .contact {
+            font-size: 23px;
+        }
+        .stayConnected {
+             position: relative;
+             flex-direction: unset;
+             justify-content: center;
+             width: 100%;
+             padding: 0;
+             margin: 0;
+             gap: 1em;
+             font-size: 1.5em;  
+        }
+        .span.connected {
+             position: absolute; 
+             top: -2em; 
+             right: 10px;
+             width: 100%;
+             font-size: 30px;
+        }
+        .icon {
+            margin: 0 10px;
+            font-size: 40px;
+
+        }
+
+    }
 
 
         /* animation & motion */
