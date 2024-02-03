@@ -165,7 +165,7 @@ main {
     box-shadow: none; 
 }
 
-.buy-lrCard {
+/* .buy-lrCard {
     position: relative;
     color: #fff;
     width: 300px;
@@ -190,7 +190,7 @@ main {
 }
 .buy-lrCard:hover:before {
     transform: translateY(0);
-}
+} */
 
 
     /*(iframe)*/
@@ -369,8 +369,8 @@ footer img {
     }
 
 
-    /*(360px to 599px devices)*/   
-   @media screen and (min-width: 320px ) and (max-width: 599px) {
+    /*(360px devices)*/   
+   @media screen and (max-width: 390px) {
         body {
             width: 100%;
         }
@@ -388,27 +388,75 @@ footer img {
         }
 
 
-        /* #buyLRcard{
+        #buyLRcard{
             display: none;
-            left: 20px;
-            background-color: red !important;
-        } */
+            
+        } 
        
 
         .page-ort-wrapper,
         .iframe-container,
         .classification-wrapper {
             display: none;
+        }  
+        
+        
+        .disclaimer {
+            width: 21em;
+            margin: 10px;
+            padding: 0;
+        }
+        .disclaim-message {
+            width: 26ch;
+            margin: 10px;
+            font-size: 24px;
+        }
+        .respective-owner {
+            width: 38ch;
+            margin: 10px;
+            line-height: 1.5;
+        }
+
+
+        footer {
+            margin: 0;
+            padding: 8em 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 50px 5px; 
+            font-size: 1.5rem;  
+        }
+      
+         .team {
+            font-size: 35px;
+         } 
+         .getInTouch {
+            width: 100%;
+            margin-top: 3em;
+            font-size: 40px;
+         } 
+         .contact {
+            font-size: 35px;
         }
         
-      
-       
-        
+         /* .span.connected {
+            color: #ff0000;
+            position: absolute; 
+            top: -2em; 
+            right: 10px;
+            width: 100%;
+            font-size: 2em;
+       }  */
+       .icon {
+           margin: 0 10px;
+           font-size: 40px;
+       } 
    }
 
 
     /*(320px device)*/   
-    @media screen and (max-width: 321px ) {
+    @media screen and (min-width: 300px ) and (max-width: 358px ) {
         body {
             width: 100%;
         }
@@ -444,10 +492,12 @@ footer img {
          footer p {
              margin: 50px 5px; 
              font-size: 1.5rem;  
-         }
-         .apex-domain {
+         } 
+
+         a.apex-domain  {
             width: 100px;
          }
+        
          .contentInfo-wrapper {
              display: flex;
              flex-direction: column;
@@ -469,7 +519,7 @@ footer img {
              padding: 0;
         }
         .span.in-touch {
-            font-size: 35px;
+            font-size: 2em;
         }
         .contact {
             font-size: 23px;
@@ -489,14 +539,12 @@ footer img {
              top: -2em; 
              right: 10px;
              width: 100%;
-             font-size: 30px;
+             font-size: 2em;
         }
         .icon {
             margin: 0 10px;
             font-size: 40px;
-
-        }
-
+        }  
     }
 
 
