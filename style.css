@@ -370,7 +370,7 @@ footer img {
 
 
     /*(360px devices)*/   
-   @media screen and (max-width: 390px) {
+   @media screen and (min-width: 359px) and (max-width: 390px) {
         body {
             width: 100%;
         }
@@ -456,7 +456,7 @@ footer img {
 
 
     /*(320px device)*/   
-    @media screen and (min-width: 300px ) and (max-width: 358px ) {
+    @media screen and (max-width: 358px ) {
         body {
             width: 100%;
         }
@@ -483,7 +483,7 @@ footer img {
         }
 
         footer {
-            display: block; 
+            display: flex; 
             width: 100%;
             margin-top: 3rem;
             padding: 10px 0;
@@ -493,11 +493,6 @@ footer img {
              margin: 50px 5px; 
              font-size: 1.5rem;  
          } 
-
-         a.apex-domain  {
-            width: 100px;
-         }
-        
          .contentInfo-wrapper {
              display: flex;
              flex-direction: column;
@@ -505,27 +500,29 @@ footer img {
              align-items: center;
          }
         .team {
-             width: 100%;
-             text-decoration: underline !important;
+             width: 100%; 
+             text-decoration: underline;
              text-decoration: #0077ccb7;
-             padding: 10px 0;
-             margin-top: 2em;
+             padding: 0;
+             margin: 2em 0 0;
              background-color: #2282c72d; 
              font-size: 2em;
         }
         .getInTouch {
-            width: 100%;
-             height: fit-content;
+             width: 100%; 
              padding: 0;
+             margin: 0;
         }
         .span.in-touch {
-            font-size: 2em;
+            font-size: 1em; 
         }
         .contact {
+            line-height: 1.5em;
             font-size: 23px;
         }
         .stayConnected {
              position: relative;
+             top: -1em;
              flex-direction: unset;
              justify-content: center;
              width: 100%;
@@ -539,7 +536,7 @@ footer img {
              top: -2em; 
              right: 10px;
              width: 100%;
-             font-size: 2em;
+             font-size: 1.5em; 
         }
         .icon {
             margin: 0 10px;
