@@ -258,7 +258,6 @@ iframe {
     text-align: justify;
     padding: 15px;
     margin: 5rem 2rem 3rem 2rem;
-    /* background-color: #000; */
     box-shadow: 2px 2px 10px 2px #000;
     border: 1px solid #ff0000; 
     border-radius: 5px;
@@ -319,13 +318,7 @@ footer img {
     border-left: 1px solid rgba(135, 207, 235, 0.349);
 
 }
-/* address {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-} */
 
 
                         /* Breakpoints */
@@ -369,8 +362,8 @@ footer img {
     }
 
 
-    /*(360px devices)*/   
-   @media screen and (min-width: 359px) and (max-width: 390px) {
+    /*(360px  to 390 devices)*/   
+   @media screen and (max-width: 391px) {
         body {
             width: 100%;
         }
@@ -402,8 +395,8 @@ footer img {
         
         
         .disclaimer {
-            width: 21em;
-            margin: 10px;
+            width: 94%;
+            margin: 0 10px;
             padding: 0;
         }
         .disclaim-message {
@@ -420,7 +413,7 @@ footer img {
 
         footer {
             margin: 0;
-            padding: 8em 0;
+            padding: 2rem 0 8rem;
             text-align: center;
         }
         footer p {
@@ -434,22 +427,25 @@ footer img {
          .getInTouch {
             width: 100%;
             margin-top: 3em;
-            font-size: 40px;
+            padding: 15px 0;
+            background-color: #87cfeb18;
+            border-top: 1px solid rgba(135, 207, 235, 0.349);
+            border-bottom: 1px solid rgba(135, 207, 235, 0.349);
+            font-size: 30px;
          } 
          .contact {
-            font-size: 35px;
+            font-size: 1.5rem;
         }
         
-         /* .span.connected {
-            color: #ff0000;
-            position: absolute; 
-            top: -2em; 
-            right: 10px;
-            width: 100%;
+     
+        .span.connected {
             font-size: 2em;
-       }  */
-       .icon {
-           margin: 0 10px;
+       }  
+       .icon-wrapper{
+           display: flex;
+           justify-content: center;
+           gap: 2rem;
+           margin-top: 1em;
            font-size: 40px;
        } 
    }
@@ -461,10 +457,14 @@ footer img {
             width: 100%;
         }
 
+
+        main {
+            display: none;
+        }
        
-        .buy-lrCard {
+        /* .buy-lrCard {
            display: none;
-        } 
+        }  */
 
         .disclaimer {
             width: 300px;
