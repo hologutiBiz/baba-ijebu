@@ -375,7 +375,7 @@ footer img {
             width: 95%;
             margin: 10px;
             padding: 0;
-            font-size: 23px;
+            font-size: 21px;
         }
         .disclaim-message {
             width: 30ch;
@@ -482,11 +482,11 @@ footer img {
             width: 94%;
             margin: 0 10px;
             padding: 0;
+            font-size: 20px;
         }
         .disclaim-message {
             width: 26ch;
             margin: 10px;
-            font-size: 24px;
         }
         .respective-owner {
             width: 28ch; 
