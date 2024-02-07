@@ -254,7 +254,6 @@ iframe {
 
     /*(discaimer)*/
 .disclaimer {
-    /* color: #fff; */
     text-align: justify;
     padding: 15px;
     margin: 5rem 2rem 3rem 2rem;
@@ -361,6 +360,97 @@ footer img {
         
     }
 
+    /*(393px  to 430px devices)*/   
+    @media screen and (max-width: 500px) {
+        body {
+            width: 100%;
+        }
+
+
+        main {
+            display: none;
+        }
+
+        .disclaimer {
+            width: 95%;
+            margin: 10px;
+            padding: 0;
+            font-size: 23px;
+        }
+        .disclaim-message {
+            width: 30ch;
+            margin: 10px;
+        }
+        .respective-owner {
+            width: 30ch;
+            margin: 10px;
+        }
+
+
+        footer {
+            display: flex; 
+            width: 100%;
+            /* margin-top: 3rem; */
+            padding: 10px 0;
+            text-align: center;
+         }
+         footer p {
+             margin: 50px 5px 0;
+             font-size: 1.7rem;  
+         } 
+         .contentInfo-wrapper {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+         }
+        .team {
+             width: 100%; 
+             text-decoration: underline;
+             text-decoration: #0077ccb7;
+             padding: 0;
+             margin: 0;
+             background-color: #2282c72d; 
+             font-size: 3rem;
+        }
+        .getInTouch {
+             width: 100%; 
+             padding: 0;
+             margin: 0;
+        }
+        .span.in-touch {
+            font-size: 2rem; 
+        }
+        .contact {
+            line-height: 1.5em;
+            font-size: 25px;
+        }
+        .stayConnected {
+             position: relative;
+             top: -1em;
+             flex-direction: unset;
+             justify-content: center;
+             width: 100%;
+             padding: 0;
+             margin: 0;
+             gap: 1em;
+             font-size: 1.5em;  
+        }
+        .span.connected {
+             position: absolute; 
+             top: -2em; 
+             right: 10px;
+             width: 100%;
+             font-size: 1.5em; 
+        }
+        .icon {
+            margin: 0 10px;
+            font-size: 40px;
+        }  
+
+
+    }
+
 
     /*(360px  to 390 devices)*/   
    @media screen and (max-width: 391px) {
@@ -381,12 +471,6 @@ footer img {
         }
 
 
-        #buyLRcard{
-            display: none;
-            
-        } 
-       
-
         .page-ort-wrapper,
         .iframe-container,
         .classification-wrapper {
@@ -405,7 +489,7 @@ footer img {
             font-size: 24px;
         }
         .respective-owner {
-            width: 38ch;
+            width: 28ch; 
             margin: 10px;
             line-height: 1.5;
         }
@@ -413,7 +497,7 @@ footer img {
 
         footer {
             margin: 0;
-            padding: 2rem 0 8rem;
+            padding: 2rem 0;
             text-align: center;
         }
         footer p {
@@ -426,9 +510,8 @@ footer img {
          } 
          .getInTouch {
             width: 100%;
-            margin-top: 3em;
             padding: 15px 0;
-            background-color: #87cfeb18;
+            background-color: #87cfeb05;
             border-top: 1px solid rgba(135, 207, 235, 0.349);
             border-bottom: 1px solid rgba(135, 207, 235, 0.349);
             font-size: 30px;
@@ -437,15 +520,14 @@ footer img {
             font-size: 1.5rem;
         }
         
-     
         .span.connected {
-            font-size: 2em;
+            font-size: 2rem;
        }  
        .icon-wrapper{
            display: flex;
            justify-content: center;
            gap: 2rem;
-           margin-top: 1em;
+           /* margin-top: 05em; */
            font-size: 40px;
        } 
    }
