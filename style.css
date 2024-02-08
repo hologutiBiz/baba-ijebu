@@ -378,19 +378,19 @@ footer img {
             font-size: 21px;
         }
         .disclaim-message {
-            width: 30ch;
-            margin: 10px;
+            width: 90%;
+            margin: 1em;
         }
         .respective-owner {
-            width: 30ch;
-            margin: 10px;
+            width: 90%;
+            margin: 1em; 
+            font-size: 19px;
         }
 
 
         footer {
             display: flex; 
             width: 100%;
-            /* margin-top: 3rem; */
             padding: 10px 0;
             text-align: center;
          }
@@ -447,8 +447,6 @@ footer img {
             margin: 0 10px;
             font-size: 40px;
         }  
-
-
     }
 
 
@@ -482,15 +480,15 @@ footer img {
             width: 94%;
             margin: 0 10px;
             padding: 0;
-            font-size: 20px;
+            font-size: 21px;
         }
         .disclaim-message {
-            width: 26ch;
-            margin: 10px;
+            width: 28ch;
+            margin: 10px 1.2em;
         }
         .respective-owner {
-            width: 28ch; 
-            margin: 10px;
+            width: 32ch; 
+            margin: 1rem;
             line-height: 1.5;
         }
 
@@ -517,7 +515,7 @@ footer img {
             font-size: 30px;
          } 
          .contact {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
         
         .span.connected {
@@ -559,7 +557,7 @@ footer img {
             font-size: 24px;
         }
         .respective-owner {
-            width: 35ch;
+            width: 28ch;
             margin: 10px;
             line-height: 1.5;
         }
