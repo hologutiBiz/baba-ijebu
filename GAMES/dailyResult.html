@@ -185,6 +185,40 @@
     </header>
     <div class="gameResults">
         <section aria-label="yesterday result">
+            <h2 class="date">friday 9/02/2024</h2>
+            <article>
+                <h3 class="game">Royal</h3>
+                <p class="winning">71 - 87 - 12 - 86 - 60</p>
+                <p class="machine">14 - 16 - 45 - 82 - 80</p>        
+            </article>
+            <article>
+                <h3 class="game">Metro</h3>
+                <p class="winning">48 - 53 - 68 - 9 - 50</p>
+                <p class="machine">18 - 1 - 76 - 59 - 19</p>        
+            </article>
+            <article>
+                <h3 class="game">Gold</h3>
+                <p class="winning">39 - 71 - 63 - 18 - 57</p>
+                <p class="machine">12 - 8 - 65 - 9 - 55</p>        
+            </article>
+            <article>
+                <h3 class="game">Jackpot</h3>
+                <p class="winning">66 - 35 - 10 - 43 - 64</p>
+                <p class="machine">23 - 15 - 20 - 50 - 75</p>        
+            </article>
+            <article>
+                <h3 class="game">Bonanza</h3>
+                <p class="winning">61 - 28 - 7 - 19 - 82</p>
+                <p class="machine">67 - 54 - 44 - 13 - 72</p>        
+            </article>
+            <article>
+                <h3 class="game"></h3>
+                <p class="winning"></p>
+                <p class="machine"></p>        
+            </article>
+        </section>
+
+        <section aria-label="two days ago result">
             <h2 class="date">thursday 08/02/2024</h2>
             <article>
                 <h3 class="game">People</h3>
@@ -219,39 +253,7 @@
         </section>
 
 
-        <section aria-label="two days ago result">
-            <h2 class="date">wednesday 07/02/2024</h2>
-            <article>
-                <h3 class="game">Tota</h3>
-                <p class="winning">62 - 44 - 76 - 22 - 58</p>
-                <p class="machine">45 - 66 - 82 - 30 - 77</p>        
-            </article>
-            <article>
-                <h3 class="game">mark ii</h3>
-                <p class="winning">16 - 32 - 19 - 71 - 56</p>
-                <p class="machine">51 - 34 - 74 - 24 - 73</p>        
-            </article>
-            <article>
-                <h3 class="game">vag</h3>
-                <p class="winning">22 - 5 - 77 - 73 - 54</p>
-                <p class="machine">55 - 23 - 7 - 32 - 41</p>        
-            </article>
-            <article>
-                <h3 class="game">Enugu</h3>
-                <p class="winning">32 - 2 - 13 - 8 - 34</p>
-                <p class="machine">10 - 90 - 76 - 48 - 86</p>        
-            </article>
-            <article>
-                <h3 class="game">Midweek</h3>
-                <p class="winning">36 - 71 - 65 - 67 - 4</p>
-                <p class="machine">57 - 76 - 83 - 85 - 44</p>        
-            </article>
-            <article>
-                <h3 class="game">Lucky</h3>
-                <p class="winning">61 - 14 - 11 - 37 - 4</p>
-                <p class="machine">89 - 26 - 69 - 45 - 50</p>        
-            </article>
-        </section>
+          
 
     </div>
     
@@ -469,24 +471,5 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>   
-    <script>
-        function createFirework() {
-      const firework = document.createElement('div');
-      firework.className = 'firework';
-      firework.style.left = `${Math.random() * window.innerWidth}px`;
-      firework.style.top = `${Math.random() * window.innerHeight}px`;
-      document.body.appendChild(firework);
-
-      setTimeout(() => {
-        document.body.removeChild(firework);
-      }, 1000);
-    }
-
-    function startFireworks() {
-      setInterval(createFirework, 800);
-    }
-
-    window.onload = startFireworks;
-    </script>
 </body>
 </html>

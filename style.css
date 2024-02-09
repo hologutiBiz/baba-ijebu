@@ -483,11 +483,11 @@ footer img {
             font-size: 21px;
         }
         .disclaim-message {
-            width: 28ch;
+            width: 85%;
             margin: 10px 1.2em;
         }
         .respective-owner {
-            width: 32ch; 
+            width: 90%; 
             margin: 1rem;
             line-height: 1.5;
         }
