@@ -28,7 +28,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 0 0 20px;
     background-color: whitesmoke; 
 }
 nav {
@@ -321,6 +321,22 @@ footer img {
 
 
                         /* Breakpoints */
+     /*(360px to 599px devices)*/    
+     @media screen and (max-width: 900px) {
+        body {
+            width: 100%;
+        }
+
+
+        .classification-wrapper {
+            width: 100%;
+        }
+        .classification {
+            width: inherit;
+        }
+     }
+
+
 
     /*(360px to 599px devices)*/    
     @media screen and (max-width: 700px) {
