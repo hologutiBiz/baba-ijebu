@@ -14,6 +14,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background-image: url("./Assets/Lotto_image_cinematic_shot_dyn.webp"); 
         }
 
         .container {
@@ -77,6 +78,19 @@
             transform:scale(1.090);
             transition: 0.4s;
         } */
+
+        @media screen and (max-width: 600px) {
+            body {
+                width: 100%;
+                padding: 0;
+
+            }
+
+            .wrapper {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
         
 
     </style>
