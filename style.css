@@ -76,7 +76,8 @@ li {
     font-weight: bolder;
 }
 #dailyResult:hover,
-#planAndEvent:hover {
+#planAndEvent:hover,
+#counterpart:hover {
     text-decoration-color: #ff0000;
     background-color: #2282c7bd;
     font-weight: 800;
