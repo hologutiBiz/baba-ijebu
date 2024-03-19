@@ -36,18 +36,16 @@
         }
 
         /* header {
-            position: sticky;
-            top: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 30px;
             width: 100%;
-            background-color: #800080;
+            background-color: #f5f5f5; 
             margin: 0;
             padding: 0;
-        } */
+        }  */
         /* header nav {
             width: 20%;
             padding: 20px;
@@ -84,6 +82,11 @@
                 }
             }
 
+        
+        .game-board {
+            width: 600px;
+        }
+
         section {
             margin: 3rem;
         }
@@ -92,8 +95,12 @@
         }
 
         article {
-            background-color: rgba(33, 176, 233, 0.075);
-            border-bottom: 2px solid lightblue;
+            text-align: center;
+            margin: 5em 0;
+            border: 1px solid #00000054;
+            border-radius: 5px;
+            /* background-color: rgba(33, 176, 233, 0.075);
+            border-bottom: 2px solid lightblue; */
         }
 
         i {
@@ -146,7 +153,7 @@
        
 
                             /* media */
-            @media screen and (min-width: 360px) and (max-width: 900px){
+            @media screen and (min-width: 360px) and (max-width: 599px){
                 body {
                     width: 100vw;
                     margin: 0;
@@ -154,6 +161,14 @@
 
                 main {
                     width: 21rem;
+                }
+                #box {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                iframe {
+                    max-width: 95%;
                 }
                 section {
                     margin: 0.5em;
@@ -165,7 +180,7 @@
                 }
 
                 img {
-                    width: 300px;
+                    width: 90%;
                 }
 
                 footer {
@@ -177,15 +192,20 @@
             }
             @media screen and (max-width: 359px){
                 body {
-                    width: 100vw; 
+                    width: 310px; 
                     font-size: 1.2rem;
-                    margin: 0;
+                    margin: 5px 10px;
                 }
 
                 main {
-                    /* width: 100%;  */
-                    /* margin: 0 50px; */
+                    width: 100%;  
+                    /* margin: 0 50px;  */
 
+                }
+
+                #box,
+                iframe {
+                    max-width: 300px;
                 }
 
                 section {
@@ -208,7 +228,7 @@
                 }
 
                 img {
-                    min-width: 300px;
+                    max-width: 300px;
                 }
 
                 footer {
@@ -217,7 +237,9 @@
                 }
                 footer p {
                     width: 35ch;
-                    font-size: small;                }
+                    font-size: small;  
+                    
+                }
             }
     </style>
 </head>
@@ -232,12 +254,11 @@
         <nav>
             <a href="/" class="home">Home</a>
         </nav>
-        <div style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            <h2 style="color: #fff;">Enugu Board</h2>
-            <iframe title="Enugu past results" src="https://vlb.hologutibusinesscentre.com/GAMES/14Enugu.html" style="width: 100%;"></iframe>
-        </div>
     </header>
     <main>
+        <div>
+            
+        </div>
         <!-- <h1>Please Check Back Some Few Time</h1>
         <h2>All Plans have been closed</h2>
         <p>Nothing To Show Now. 
@@ -246,15 +267,22 @@
 
 
         <h2>Welcome to Plan Page</h2>
-        <small>Click the image to go to the main board</small> 
 
-        <section id="current">
+        <div id="box" style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;  position: sticky;
+        top: 0; z-index: 2; background-color: #000; margin: 50px 0;">
+            <h2 style="color: #fff;">Enugu Board <small>(scroll the board)</small></h2>
+            <iframe title="Enugu past results" src="https://vlb.hologutibusinesscentre.com/GAMES/14Enugu.html" class="game-board"></iframe>
+        </div>
+
+        <!-- <section id="current"> -->
             <h2></h2>
             <article>
                 <h2>from TOTA Board</h2>
                 <a href="https://vlb.hologutibusinesscentre.com/GAMES/11Tota">
                     <img src="https://i.postimg.cc/Mp8Hy2Rt/Post-59-TOTA.png">
                 </a> 
+                <br>
+                <small style="font-size: small;">Click the image to go to the main board</small> 
             </article>
 
             <article>
@@ -262,6 +290,8 @@
                 <a href="https://vlb.hologutibusinesscentre.com/GAMES/13Vag">
                     <img src="https://i.postimg.cc/vTBSxPLb/Post-59-VAG.png">
                 </a> 
+                <br>
+                <small style="font-size: small;">Click the image to go to the main board</small> 
             </article> 
 
             <article>
@@ -269,13 +299,15 @@
                 <a href="https://vlb.hologutibusinesscentre.com/GAMES/17Royal.html">
                     <img src="https://i.postimg.cc/SshN79Jn/Post-59-ROYAL.png">
                 </a>
+                <br>
+                <small style="font-size: small;">Click the image to go to the main board</small> 
             </article>
             
             <p>What do you pick?</p>
 
             <p>Let's have it. Drop it on any of the social media post down below</p>
     
-        </section> 
+        <!-- </section>  -->
 
         <hr>
 
@@ -307,7 +339,7 @@
         <a href="" target="_blank">
             <i class="fa-brands fa-square-x-twitter"  aria-label="connect 0n our X Page "></i>
         </a>
-        <a href="" target="_blank">
+        <a href="https://www.facebook.com/visuaLottoBoard/posts/pfbid0FCmc1vDaEAMTRSPDBWHHSXRbYtrtM9AQEX2dy8H2Xv7mYckV9v3u5Daf3uhBqpnPl" target="_blank">
             <i class="fa-brands fa-facebook"  aria-level="connect on our facebook Page"></i>
         </a>
         <a href="https://m.me/109930914660224" target="_blank"><i class="fa-brands fa-facebook-messenger"  aria-label="connect on Messenger handle to Chat Us"></i></a>
