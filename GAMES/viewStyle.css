@@ -1,0 +1,23 @@
+
+
+.google-review-link {
+    font-size: 4rem;
+    animation: change-color 5s infinite;
+}
+    @keyframes change-color {
+        0% {
+            color: initial;
+        }
+        25% {
+            opacity: 0.1;
+        }
+        50% {
+            color: navy;
+        }
+        75% {
+            color: #0000ff;
+        }
+        100% {
+            color: #ff0000;
+        }
+    }
