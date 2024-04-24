@@ -32,7 +32,7 @@ header {
     padding: 0 0 20px;
     background-color: whitesmoke; 
 }
-.brand-container {
+#brand-container {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -44,15 +44,20 @@ header {
     background-color: #015ea0d9;
     font-size: 30px;
 }
-.visual-lotto-board {
+#visual-lotto-board {
     text-align: center;
     text-shadow: 2px 1px 1px #000;
-    border: 1px solid #0000001a;
+    border: 1px solid #ffffff67;
     border-radius: 5px;
     padding: 10px;
-    /* background-color: #015ea0d6; */
-
 }
+#vlb-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fffffff4;
+}
+
 nav {
     padding: 40px 0 0;
     /* background-color: #005590; */
@@ -154,25 +159,8 @@ li a:visited {
 /* li a:visited:hover {
     color: #000;
 } */
-#home {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
 
-    /* color: #ffc0cb !important; 
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    border-radius: 15px;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    /* padding: 10px; */
-}
-.home:hover{
-    color: #ff0000 !important; 
-    border-radius: 10px; 
-    /* background-color: white; */
 
-}
   
 
 /* main */

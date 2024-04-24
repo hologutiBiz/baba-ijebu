@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+#review-and-demo-container {
+    background-color: #131417;  
+
+}
+#demo {
+    /* position: relative; */
+    color: #e5e5e5;
+    font-size: 2.26rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family:'Roboto';
+    
+}
+
+
+p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+
+#animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+#animation > div > div {
+   color: #20a7d8;
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+#animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+/* .we-have div {
+  background-color:#20a7d8;
+}
+.that-might div {
+  background-color:#CD921E;
+}
+.you div {
+  background-color:#c10528;
+}  */
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  15% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600");
+
+:root {
+  --bar-scale-y: 0;
+  --sparkle-color: rgb(253 244 215 / 40%);
+}
+
+@keyframes pop-word {
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bar-scale {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0);
+  }
+
+  60% {
+    transform: scale(1) translate(4px, 1px) rotate(8deg);
+  }
+
+  100% {
+    transform: scale(0) translate(4px, 1px) rotate(8deg);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    text-shadow: 0 0 8px red;
+  }
+}
+
+/* body {
+  display: grid;
+  height: 100vh;
+
+  background-color: black;
+  place-items: center;
+} */
+
+#link {
+  /* color: white; */
+  font-family: "Playfair Display", Vidaloka, serif;
+  font-size: 2rem;
+  line-height: 0.85;
+  perspective: 500px;
+}
+
+#the-article {
+    display: block;
+    margin: 0 auto;
+  
+    animation: show 0.01s forwards, pop-word 1.5s forwards;
+    animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
+    opacity: 0;
+    transform: rotateX(120deg);
+    transform-origin: 50% 100%;
+}
+
+#the-article:nth-of-type(1) {
+  padding: 10px 20px;
+  animation-delay: 4s;
+  background-color: #20a7d8;
+  border-radius: 5px;
+  color: #fff;
+}
+
+        
+
+@media screen and (max-width: 600px) {
+  #link {
+    font-size: 5rem;
+  }
+}
+
+
+                /* review section */
+
+#google-review-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+  }
+  
+  #rate-our-page {
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
