@@ -36,11 +36,16 @@
     </head>
     <body>
 
-       <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54JWWN2R"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
+            <!-- Google Tag Manager (noscript) -->
+                    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54JWWN2R"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+
+        <div id="loading">
+            <img src="/Assets/VLB_logo-removebg-loading-Img.jpg" id="loadingImage">
+            <p>Loading... Please wait</p>
+        </div>
+
         <header>
             <div id="brand-container">
                 <div href="/" aria-current="page">
@@ -245,6 +250,12 @@
                 </div>
             </div>
         </footer>
+        <script>
+            window.addEventListener('load', function () {
+                var loading = document.getElementById('loading');
+                loading.style.display = 'none';
+            });
+        </script>
         <script src="script.js"></script>
     </body>
 </html>
