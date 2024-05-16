@@ -8,7 +8,7 @@
     <title>Visual Lotto Board | Classification Chart</title>
 
     <meta property="og:title" content="Classification Chart">
-    <meta property="og:description" content="Functionality of Lotto numbers from 1 to 90">
+    <meta property="og:description" content="Lotto classification chart">
     <meta property="og:image" content="https://i.postimg.cc/Bn4Lbcjv/classification-chart.png">
     <meta property="og:image:alt" content="Numbers from 1 to 90 relating to each other">
     <meta  property="og:url" content="https://vlb.hologutibusinesscentre.com/classification">
@@ -21,8 +21,45 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin: 0;
             background-image: url("./Assets/Lotto_image_cinematic_shot_dyn.webp"); 
         }
+
+        header {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            background-color: #000;
+            margin: 0;
+        }
+      
+        li a img {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 100px;
+            outline: 1px solid #add8eb;
+        }
+
+        h1 {
+            /* color: #add8eb; */
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #000000d0;
+            padding: 5px;
+            font-size: 2.5em;
+            animation: change-color 5s infinite;
+        }
+            @keyframes change-color {
+                0% {
+                    color: #fff;
+                }
+                100% {
+                    color: #add8eb;
+                }
+            }
+
 
         .container {
             display: flex;
@@ -41,8 +78,8 @@
         .className-wrapper {
             position: sticky;
             top: 0;
-            color: white;
-            background-color: red;
+            color: #fff;
+            background-color: #ff0000;
         }
         .className {
             /* writing-mode: vertical-rl; */
@@ -51,11 +88,11 @@
         }
         .no {
             color: white;
-            background-color: purple;
+            background-color: #800080;
 
         }
         tbody {
-            background-color: yellow;
+            background-color: #ffff00;
         }
 
         td {
@@ -93,6 +130,10 @@
 
             }
 
+            h1 {
+                font-size: 2rem;
+            }
+
             .wrapper {
                 flex-direction: column;
                 gap: 2rem;
@@ -113,15 +154,23 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54JWWN2R"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- <header>
+
+    <header>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li>
+                    <a href="/">
+                        <img src="https://i.postimg.cc/hjxfCg67/VLB-logo-removebg-preview.png" alt="home">
+                    </a>
+                </li>
             </ul>
         </nav>
-    </header> -->
+    </header>
+
+    <h1>lotto classification chart</h1>
+
     <!-- <dialog>  -->
-    
+
     <div class="container">
         <div class="wrapper">
             <table>
