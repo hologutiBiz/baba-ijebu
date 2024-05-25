@@ -60,27 +60,26 @@ header {
 #brand-container {
     color: #fff;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0; 
     gap: 1rem;
-    background-color: #015ea0d9;
+    background-color: #015ea0d9; 
     font-size: 30px;
 }
 #visual-lotto-board {
     text-align: center;
     text-shadow: 2px 1px 1px #000;
-    border: 1px solid #ffffff67;
     border-radius: 5px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 #vlb-logo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #fffffff4;
+    width: 80;
+    height: 80px; 
+    background-color: #fffafa; 
+    /* box-shadow: 0px 0px 1px 1px #add8eb;     */
+    border-radius: 50%;  
 }
 
 nav {
@@ -388,6 +387,20 @@ footer img {
     gap: 5px;
     border-left: 1px solid rgba(135, 207, 235, 0.349);
 }
+.getInTouch a {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 0.4em;
+    background-color: #ffffff18;
+    border: 1px solid #daa52000;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.getInTouch a:hover {
+    color: #fff;
+    border: 1px solid #daa52079;
+    transition: 0.4s;
+}
 .stayConnected {
     display: flex;
     flex-direction: column;
@@ -472,6 +485,13 @@ footer img {
     @media screen and (max-width: 500px) {
         body {
             width: 100%;
+        }
+
+        #brand-container {
+            flex-direction: column;
+        }
+        #visual-lotto-board {
+            font-size: 1.5em;
         }
 
 
@@ -564,6 +584,10 @@ footer img {
             width: 100%;
         }
 
+        #visual-lotto-board {
+            font-size: 1.3em;
+        }
+
         div.navigation {
             display: block; 
             width: 100%;
@@ -645,6 +669,10 @@ footer img {
             width: 100%;
         }
 
+        #visual-lotto-board {
+            font-size: 1.2em;
+        }
+
 
         main {
             display: none;
@@ -660,12 +688,12 @@ footer img {
             padding: 0;
         }
         .disclaim-message {
-            width: 23ch;
+            width: 98%;
             margin: 10px;
             font-size: 24px;
         }
         .respective-owner {
-            width: 28ch;
+            width: 98%;
             margin: 10px;
             line-height: 1.5;
         }
