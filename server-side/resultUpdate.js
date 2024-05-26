@@ -3,9 +3,10 @@ const express = require('express');
 const crypto = require('crypto');
 const bodyParser = require('body-parser');
 
+require('dotenv').config();
 
 const app = express();
-const secret = 'ddfc0ea6abe89399c1d1cbb65031f8aeb4e4b24d';
+const secret = 'e7bc73e68687b432fe3263217cdcbc9ad98ed29f';
 
 app.use(bodyParser.json());
 
