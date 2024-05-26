@@ -78,13 +78,12 @@ header {
     width: 80;
     height: 80px; 
     background-color: #fffafa; 
-    /* box-shadow: 0px 0px 1px 1px #add8eb;     */
+    box-shadow: 0px 0px 1px 1px #fffafa;
     border-radius: 50%;  
 }
 
 nav {
     padding: 40px 0 0;
-    /* background-color: #005590; */
     background: url("https://i.postimg.cc/YCxC6SrH/c05ad767-42ea-4f5d-b482-d8bd29e67d1b.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -130,6 +129,7 @@ li:hover {
 .navigation {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -433,10 +433,6 @@ footer img {
         .classification {
             width: inherit;
         }
-
-        /* footer {
-            flex-direction: column !important;
-         } */
      }
 
      
@@ -491,7 +487,7 @@ footer img {
             flex-direction: column;
         }
         #visual-lotto-board {
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
 
 
@@ -585,7 +581,7 @@ footer img {
         }
 
         #visual-lotto-board {
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
 
         div.navigation {
@@ -657,7 +653,6 @@ footer img {
            display: flex;
            justify-content: center;
            gap: 2rem;
-           /* margin-top: 05em; */
            font-size: 40px;
        } 
    }
@@ -670,7 +665,7 @@ footer img {
         }
 
         #visual-lotto-board {
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
 
 
