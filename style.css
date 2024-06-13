@@ -83,7 +83,6 @@ header {
     text-align: center;
     text-shadow: 2px 1px 1px #000;
     border-radius: 5px;
-    /* padding: 10px; */
 }
 #vlb-logo {
     width: 80;
@@ -118,7 +117,6 @@ ul {
     padding: 15px; 
 }
 li {
-    /* color: #000; */ 
     display: block;
     width: 120px;
     text-align: center;
@@ -181,19 +179,9 @@ li a {
     text-decoration-color: #fff;
     font-size: 18px;
 }
-/* li a:hover {
-    color: #0000ff !important;
-    text-decoration-color: #ff0000;
-    background-color: #fff;    
-    border-radius: 5px;
-    transition: 0.5s;
-} */
 li a:visited {
     color: #daa520; 
 }
-/* li a:visited:hover {
-    color: #000;
-} */
 
 
 /* #demo-passage {
@@ -302,7 +290,7 @@ main {
 
 iframe {
     width: 500px; 
-    height: 200rem;  
+    height: 250rem;  
     margin-block-end: 25px; 
     border: none; 
 }
