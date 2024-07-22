@@ -92,13 +92,13 @@
         .gameList {
             width: 100%;
             margin-top: 5rem;
-            background-color: #000;
         }
         table {
             width: 600px;
             margin: 5rem;
             text-align: center;
             border: 1px solid #000;
+            border-collapse: collapse;
         }
         thead {
             text-transform: uppercase;
@@ -118,7 +118,6 @@
         }
         .color-1 {
             background-color: azure;
-            border-bottom: 2px solid #ff0000;
         }
         .color-2 {
             background-color: rgb(242, 248, 248);
@@ -153,14 +152,15 @@
                 }
                 
                 .gameList {
-                    width: 300px;  
+                    width: 100%;  
                 }
                 table {
                     width: inherit; 
                     margin: 0;
+                    /* border: 1px solid #000; */
                 }
                 thead {
-                    width: inherit;
+                    color: #fff;
                     background-color: #ff0000;
                     font-size: 20px;
                 } 
@@ -180,6 +180,29 @@
                     font-size: 20px;
                     padding: 20px 0;
                   
+                }
+
+                .color-1 {
+                    background-color: #fff;
+                    border-collapse: collapse;
+                    border: none;
+                    border-bottom: 2px solid #ff0000;
+                }
+                .color-1 .day,
+                .last-row .day {
+                    border-right: 1px solid #0000005b;
+                    font-weight: bold;
+                }
+                .color-1 tr td {
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    font-weight: 400;
+                }
+                
+                .last-row, .last-row tr td  {
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    font-weight: 400;
                 }
             }
     </style>
@@ -304,7 +327,7 @@
                     <td>10:25 pm</td>
                 </tr>
             </tbody>
-            <tbody  class="color-2">
+            <tbody  class="color-1">
                 <tr>
                     <td rowspan="6" class="day">tuesday</td>
                     <td>Gold</td>
@@ -358,7 +381,7 @@
                     <td>10:25 pm</td>
                 </tr>
             </tbody>
-            <tbody  class="color-2">
+            <tbody  class="color-1">
                 <tr>
                     <td rowspan="6" class="day">thursday</td>
                     <td>People</td>
@@ -412,7 +435,7 @@
                     <td>10:25 pm</td>
                 </tr>
             </tbody>
-            <tbody  class="color-2">
+            <tbody  class="color-1">
                 <tr>
                     <td rowspan="6" class="day">saturday</td>
                     <td>Premier King</td>
@@ -439,29 +462,29 @@
                     <td>10:25 pm</td>
                 </tr>
             </tbody>
-            <tbody  class="color-1">
+            <tbody  class="last-row">
                 <tr>
                     <td rowspan="6" class="day">sunday</td>
                     <td>Royal</td>
                     <td>9:25 am</td>
                 </tr>
-                <tr class="color-2">
+                <tr>
                     <td>Mark II</td>
                     <td>12:25 pm</td>
                 </tr>
-                <tr class="color-1">
+                <tr>
                     <td>Enugu</td>
                     <td>3:25 pm</td>
                 </tr>
-                <tr class="color-2">
+                <tr>
                     <td>Aseda</td>
                     <td>6:25 pm</td>
                 </tr>
-                <tr class="color-1">
+                <tr>
                     <td>Lucky</td>
                     <td>8:00 pm</td>
                 </tr>
-                <tr class="color-2">
+                <tr>
                     <td>Tota</td>
                     <td>10:25 pm</td>
                 </tr>
