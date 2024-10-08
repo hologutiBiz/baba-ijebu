@@ -272,7 +272,11 @@ main {
 .iframe-container {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: center; 
+    max-inline-size: 100%;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+    scroll-behavior: smooth;
    
   
 }
