@@ -168,10 +168,19 @@ li:hover {
     font-weight: 800;
     transition: 1s;
 }
-#planAndEvent {
+/* #planAndEvent {
     color: #ffff00;
     font-weight: bolder;
-}
+} */
+ #position {
+    color: #000;
+    background-color: #daa520;
+ }
+ #position:hover {
+    color: #fff;
+    background-color: #ae8215;
+    transition: 1s;
+ }
 
 
 li a {
