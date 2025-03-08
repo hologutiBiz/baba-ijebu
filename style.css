@@ -61,14 +61,46 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #004aad;
+}
+#brand-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+img {
+    width: 80px;
+    border-radius: 50%;
+}
+h1 {
+    color: #004aad;
+    font-weight: lighter;
+}
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+ul li a {
+    color: #004aad;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* header {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 0 0 20px;
     background-color: whitesmoke; 
-}
-#brand-container {
+} */
+/* #brand-container {
     color: #fff;
     display: flex;
     justify-content: center;
@@ -78,36 +110,36 @@ header {
     gap: 1rem;
     background-color: #015ea0d9; 
     font-size: 30px;
-}
-#visual-lotto-board {
+} */
+/* #visual-lotto-board {
     text-align: center;
     text-shadow: 2px 1px 1px #000;
     border-radius: 5px;
-}
-#vlb-logo {
+} */
+/* #vlb-logo {
     width: 80;
     height: 80px; 
     background-color: #fffafa; 
     box-shadow: 0px 0px 15px 2px #000;
     border-radius: 50%;  
-}
+} */
 
-nav {
+/* nav {
     padding: 40px 0 0;
     background: url("https://i.postimg.cc/YCxC6SrH/c05ad767-42ea-4f5d-b482-d8bd29e67d1b.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     
-}
-.list-of-games {
+} */
+/* .list-of-games {
     color: #000;
     text-align: center;
     text-shadow: 2px 2px 1px #fff;
     padding: 15px 5px;
     font-size: 30px;
-}
-ul {
+} */
+/* ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -115,8 +147,8 @@ ul {
     flex-wrap: wrap; 
     gap: 1.5em;
     padding: 15px; 
-}
-li {
+} */
+/* li {
     display: block;
     width: 120px;
     text-align: center;
@@ -129,13 +161,13 @@ li {
     border-bottom: 1px solid #00000000;
     border-radius: 5px;
     font-size: small;
-}
-li:hover {
+} */
+/* li:hover {
     transform: scale(1.2);
     transition: 0.5s;
     border: 1px solid #daa520;
-}
-.navigation {
+} */
+/* .navigation {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -145,8 +177,8 @@ li:hover {
     gap: 20px;
     background-color: #000;
     padding: 20px 0;
-}
-.navigation .anchor {
+} */
+/* .navigation .anchor {
     color: #fff;
     width: 300px;
     text-align: center;
@@ -155,24 +187,24 @@ li:hover {
     border: none;
     border-radius: 5px;
     font-size: 20px;
-}
-#dailyResult:visited {
+} */
+/* #dailyResult:visited {
     color: #f5f5f5;
     font-weight: bolder;
-}
-#dailyResult:hover,
+} */
+/* #dailyResult:hover,
 #planAndEvent:hover,
 #counterpart:hover {
     text-decoration-color: #ff0000;
     background-color: #2282c7bd;
     font-weight: 800;
     transition: 1s;
-}
+} */
 /* #planAndEvent {
     color: #ffff00;
     font-weight: bolder;
 } */
- #position {
+ /* #position {
     color: #000;
     background-color: #daa520;
  }
@@ -180,17 +212,17 @@ li:hover {
     color: #fff;
     background-color: #ae8215;
     transition: 1s;
- }
+ } */
 
 
-li a {
+/* li a {
     color: #ffff00;
     text-decoration-color: #fff;
     font-size: 18px;
 }
 li a:visited {
     color: #daa520; 
-}
+} */
 
 
 /* #demo-passage {
@@ -502,10 +534,15 @@ footer img {
             font-size: 1.3em;
         }
 
-
-        main {
-            display: none;
+        .frame iframe {
+            width: 400px;
+            margin: auto 5px;
         }
+
+
+        /* main {
+            display: none;
+        } */
 
         .disclaimer {
             width: 95%;
@@ -608,12 +645,16 @@ footer img {
             border-radius: 10px;
         }
 
+        .frame iframe {
+            width: 360px;
+        }
 
-        .page-ort-wrapper,
+
+        /* .page-ort-wrapper,
         .iframe-container,
         .classification-wrapper {
             display: none;
-        }  
+        }   */
         
         
         .disclaimer {
@@ -679,11 +720,14 @@ footer img {
         #visual-lotto-board {
             font-size: 1.1em;
         }
-
-
-        main {
-            display: none;
+        .frame iframe {
+            width: 300px;
         }
+
+
+        /* main {
+            display: none;
+        } */
        
         /* .buy-lrCard {
            display: none;
@@ -772,7 +816,7 @@ footer img {
         @media (prefers-reduced-motion: reduce) {
             .merry-christmas {
                 animation: none;
-        
+    
             }
         }
 

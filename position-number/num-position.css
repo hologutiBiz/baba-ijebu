@@ -1,64 +1,99 @@
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+      padding: 0;
+      margin: 0;
 }
-
 header {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: #ff0000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #004aad;
 }
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#brand-container {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
 }
-#gamesNavigation {
-    /* display: none; */
-    list-style-type: none;
-
+img {
+      width: 80px;
+      border-radius: 50%;
+}
+h1 {
+      color: #004aad;
+}
+ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 30px;
+}
+ul li a {
+      color: #004aad;
+      text-decoration: none;
+      font-weight: 600;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   max-inline-size: 100%;
+      /* margin: auto; */
+   overflow-x: auto;
+   scroll-snap-type: inline mandatory;
+   scroll-behavior: smooth;
 }
+      /* h2 {
+          color: #ff0000;
+          text-transform: capitalize;
+          font-weight: bold;
+          font-size: 2.5rem;
+      } */
+      /* .container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, 1fr);
+          gap: 30px;
+      } */
 
+      /* .box {
+          display: grid;
+          width: 100px;
+          height: 100px;
+          place-content: center;
+          text-align: center;
+          border-radius: 50%;
+      } */
+    
+      /* .blue-bg-color {
+        
+          background-color: #004aad;
+          border: 1px solid #000;
+      } */
+      /* .blue-bg-color a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 3rem;
+      } */
+      /* .blue-bg-color a:hover {
+          color: whitesmoke;
+          font-size: 4rem;
+          transition: 0.4s;
+      } */
+      
 
 table {
-    width: 490px;
-    height: 100%;
-    margin: 25px 7px;
-    border-collapse: collapse; 
-    border-left: 2px solid rgba(0, 0, 0, 0.333);
+   width: 490px; 
+   height: 100%;
+   margin: 25px 7px;
+   border-collapse: collapse; 
+   border-left: 2px solid rgba(0, 0, 0, 0.333);
 }
 
 caption {
-   
+    /* color: #ff0000; */
+   font-size: 30px;
 }
-caption a {
-    color: #004add;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 5px;
-    font-size: 30px;
-}
-caption a::after {
-    content: "\2192";
-    margin-left: 10px;
-    font-size: 18px;
-    /* opacity: 0; */
-}
-/* caption a:hover a::after {
-    opacity: 1;
-    transform: ;
-} */
 
 th{
     background-color: whitesmoke;
@@ -76,8 +111,10 @@ th{
 }
 
 td {
+
     border-top: 1px solid black;
     padding: 5px 0;
+    /* font-size: 1000px; */
 }
 .line {
     color: #ff0000;
@@ -99,43 +136,48 @@ td {
     /* font-weight: bolder; */
 }
 
-.xMas-tree {
+/* .xMas-tree {
     position: absolute;
     top: 8px;
     right: 5%;
     font-size: 20px;
     text-align: center;
-}
+} */
 
-#lbw {
+/* #lbw {
 border-right: 1px solid red;
 }
 
 #fbm {
 border-left: 1px solid red;
 
-}
+} */
 
 .winning {
-color: blue;
-text-align: center;
-font-size: 25px;
+   color: blue;
+   text-align: center;
+   font-size: 20px;
 }
 .machine {
-color: red;
-text-align: center;
-font-size: 25px;
+   color: red;
+   text-align: center;
+   font-size: 20px;
 }
+.position {
+    background-color: rgb(240, 240, 206);
+    border-radius: 50%;
+    font-size: 25px;
+} 
 
 
-.end-of-the-year {
+/* .end-of-the-year {
     color: #0303c6;
     text-align: center;
     font-weight: bold;
-}
+} */
 
 
-.happyNewYear {
+/* .happyNewYear {
     color: #fff;
     text-align: center;
     word-spacing: 10px;
@@ -153,7 +195,7 @@ font-size: 25px;
     padding: 20px;
     font-weight: bolder;
     font-size: x-large;
-} 
+}  */
 
 
 
