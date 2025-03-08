@@ -25,12 +25,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
 
     <style>
-      .container {
-         display: grid;
-         grid-template-columns: repeat(4, 150px);
-      }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: #004aad; */
+            border-bottom: 2px solid #004aad;
+        }
+        #brand-container {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+        }
+        img {
+            width: 80px;
+            border-radius: 50%;
+        }
+        h1 {
+            color: #004aad;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: #fff;
+            gap: 30px;
+        }
+        ul li a {
+            color: #004aad;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-        
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto 2rem;
+        }
+        h2 {
+            color: #ff0000;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+        }
+
+        .box {
+            display: grid;
+            width: 100px;
+            height: 100px;
+            place-content: center;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .box a {
+            
+        }
+        .blue-bg-color {
+            /* color: #fff; */
+            /* display: block; */
+            /* width: 100%; */
+            background-color: #004aad;
+            border: 1px solid #000;
+        }
+        .blue-bg-color a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 3rem;
+        }
+        .blue-bg-color a:hover {
+            color: whitesmoke;
+            font-size: 4rem;
+            transition: 0.4s;
+        }
+
     </style>
 </head>
 <body>
@@ -41,30 +119,37 @@
     <!-- End Google Tag Manager (noscript) -->
     
     <header>
+        <div id="brand-container">
+            <img src="https://i.postimg.cc/L5wCns07/VLB-logo-removebg-preview-200px.png" alt="visual lotto board logo" id="vlb-logo">
+            <h1 id="visual-lotto-board">Visual Lotto Board</h1>
+        </div>
         <nav>
          <ul>
             <li><a href="/" class="home">Home</a></li>
-            <li><a href="">Classification chart</a></li>
+            <li><a href="./classification.html" target="_blank">Classification chart</a></li>
             <li><a href=""></a></li>
          </ul>
         </nav>
     </header>
     <main>
-      <h1>position number</h1>
+      <h2>lotto position number</h2>
+      <p>Click the number to check positions</p>
       
-      <div class="courosel">
-
-      </div>
+     
 
       <div class="container">
-         <div class="" style="border: 2px solid red;">
-            <a href="position-number/twenty-three_eighty-two/_23-82.html" target="_blank">23</a>
-         </div>
-         <!-- <div class=""></div>
-         <div class=""></div>
-         <div class=""></div> -->
+        <div class="box box1 blue-bg-color">
+            <a class="" id="Tw0Three" href="./position-number/overview/_23-overview/_23-82.html" target="_blank">23</a>
+        </div>
+        <div class="box box2 blue-bg-color">
+            <a class="" id="Sixty-nine" href="./position-number/overview/_69-overview/_69-75.html" target="_blank">69</a>
+
+        </div>
+        <div class="box box1 blue-bg-color"></div>
+        <div class="box box1 blue-bg-color"></div>
       </div>
     </main>
+
     <footer>
         <a href="" target="_blank">
             <i class="fa-brands fa-square-x-twitter"  aria-label="connect 0n our X Page "></i>
