@@ -28,7 +28,12 @@ pageOrt.addEventListener("click", function() {
     }
 });
 
-
+document.addEventListener("DOMContentloaded", function () {
+    if(!localStorage.getItem("alertShown")) {
+        alert("Our page has been revert to former way"); 
+        localStorage.getItem("alertShown", "true");
+    }
+})
 
 
 
