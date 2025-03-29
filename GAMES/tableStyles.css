@@ -139,6 +139,10 @@ font-size: 25px;
     font-size: x-large;
 } 
 
+#correction {
+    background-color:rgb(225, 241, 241);
+}
+
 
 
                       /* Breakpoints */
