@@ -1,12 +1,6 @@
 {
-    "6gold": {
-        "GOLD": [
-            {
-                "serialNumber": "E",
-                "date": "",
-                "winningNumbers": [],
-                "machineNumbers": []
-            },
+    "gold": {
+        "2023": [
             {
                 "serialNumber": "E",
                 "date": "tuesday 3rd",
@@ -8763,50 +8757,20 @@
             },
             {
                 "serialNumber": "51",
-                "date": "",
+                "date": "Jul 1st",
                 "winningNumbers": [
-                    {
-                        "position": "first_box_winning",
-                        "number": ""
-                    },
-                    {
-                        "position": "second_box_winning",
-                        "number": ""
-                    },
-                    {
-                        "position": "center_box_winning",
-                        "number": ""
-                    },
-                    {
-                        "position": "forth_box_winning",
-                        "number": ""
-                    },
-                    {
-                        "position": "last_box_winning",
-                        "number": ""
-                    }
+                    {"position": "first_box_winning", "number": "5" },
+                    {"position": "second_box_winning", "number": "41" },
+                    {"position": "center_box_winning", "number": "69" },
+                    {"position": "forth_box_winning", "number": "8"},
+                    {"position": "last_box_winning", "number": "88"}
                 ],
                 "machineNumbers": [
-                    {
-                        "position": "first_box_machine",
-                        "number": ""
-                    },
-                    {
-                        "position": "second_box_machine",
-                        "number": ""
-                    },
-                    {
-                        "position": "center_box_machine",
-                        "number": ""
-                    },
-                    {
-                        "position": "forth_box_machine",
-                        "number": ""
-                    },
-                    {
-                        "position": "last_box_machine",
-                        "number": ""
-                    }
+                    {"position": "first_box_machine", "number": "43" },
+                    {"position": "second_box_machine", "number": "28" },
+                    {"position": "center_box_machine", "number": "1" },
+                    {"position": "forth_box_machine", "number": "21" },
+                    {"position": "last_box_machine", "number": "6" }
                 ]
             }
         ]
